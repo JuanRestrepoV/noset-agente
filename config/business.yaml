@@ -1,0 +1,30 @@
+# Configuración del negocio — Generado por AgentKit
+negocio:
+  nombre: "No-Set Creative Studio"
+  handle: "@noset.cstudio"
+  descripcion: >
+    Agencia de producción audiovisual impulsada por inteligencia artificial.
+    Eliminamos la necesidad de sets de grabación, modelos, fotógrafos y procesos
+    costosos para crear contenido visual de alto impacto — más rápido, más económico
+    y sin sacrificar calidad. Hasta 70% más económico que la producción tradicional.
+    Entrega en 24 a 72 horas.
+  ubicacion: "Colombia"
+  contacto_whatsapp: "+57 316 316 3841"
+  instagram: "@noset.cstudio"
+  tagline: "No set. No limits."
+  horario: "Lunes a sábado 8:00 AM a 9:00 PM (hora Colombia, UTC-5). Domingos cerrado."
+
+agente:
+  nombre: "Nox"
+  tono: "Directo, cercano y profesional. Tutea al cliente. Sin rodeos ni palabras vacías. Colombiano con filtro profesional — amigable pero con autoridad. No suena a bot, suena a alguien del equipo."
+  casos_de_uso:
+    - "Responder preguntas frecuentes sobre servicios y precios"
+    - "Calificar y atender leads de ventas"
+    - "Tomar pedidos y recibir briefs de proyectos"
+    - "Soporte post-venta"
+    - "Agendar reuniones de consultoría"
+
+metadata:
+  creado: "2026-05-16"
+  version: "1.0"
+  proveedor_whatsapp: "twilio"
