@@ -7,7 +7,11 @@ from dotenv import load_dotenv
 load_dotenv()
 logger = logging.getLogger("agentkit")
 
-client = AsyncAnthropic(api_key=os.getenv("ANTHROPIC_API_KEY"))
+client = AsyncAnthropic(
+    api_key=os.getenv("ANTHROPIC_API_KEY"),
+    timeout=60.0,
+    max_retries=3,
+)
 
 
 def cargar_config_prompts() -> dict:
@@ -59,5 +63,5 @@ async def generar_respuesta(mensaje: str, historial: list[dict]) -> str:
         return respuesta
 
     except Exception as e:
-        logger.error(f"Error Claude API: {e}")
+        logger.error(f"Error Claude API: {type(e).__name__}: {e}")
         return obtener_mensaje_error()
